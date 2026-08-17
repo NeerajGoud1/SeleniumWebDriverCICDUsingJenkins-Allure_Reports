@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-08-12T10:37:36 IST" name="Default suite" finished-at="2026-08-12T10:38:29 IST" duration-ms="52503">
+    <groups>
+    </groups>
+    <test started-at="2026-08-12T10:37:36 IST" name="Default test" finished-at="2026-08-12T10:38:29 IST" duration-ms="52503">
+      <class name="com.JenkinsCICD.DemoTest.JenkinsCICDTest">
+        <test-method signature="ChromeBrowserTest()[pri:0, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:37:36 IST" name="ChromeBrowserTest" finished-at="2026-08-12T10:37:49 IST" duration-ms="12704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChromeBrowserTest -->
+        <test-method signature="FirefoxBrowserTest()[pri:1, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:37:49 IST" name="FirefoxBrowserTest" finished-at="2026-08-12T10:38:02 IST" duration-ms="12640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirefoxBrowserTest -->
+        <test-method signature="EdgeBrowserTest()[pri:2, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:02 IST" name="EdgeBrowserTest" finished-at="2026-08-12T10:38:11 IST" duration-ms="9484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EdgeBrowserTest -->
+        <test-method signature="NavigateChrome()[pri:3, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:11 IST" name="NavigateChrome" finished-at="2026-08-12T10:38:13 IST" duration-ms="1462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateChrome -->
+        <test-method signature="NavigateEdge()[pri:4, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:13 IST" name="NavigateEdge" finished-at="2026-08-12T10:38:14 IST" duration-ms="1577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateEdge -->
+        <test-method signature="NavigateFirefox()[pri:5, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:14 IST" name="NavigateFirefox" finished-at="2026-08-12T10:38:14 IST" duration-ms="358" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Process (pid=38364) unexpectedly closed with status 0 
+Host info: host: 'NEERAJSYOGA', ip: '192.168.137.182'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process (pid=38364) unexpectedly closed with status 0 
+Host info: host: 'NEERAJSYOGA', ip: '192.168.137.182'
+Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi..., prefs: {remote.active-protocols: 1}}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:171)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:575)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:259)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:204)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:137)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:118)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:84)
+at com.JenkinsCICD.DemoTest.JenkinsCICDTest.NavigateFirefox(JenkinsCICDTest.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateFirefox -->
+        <test-method signature="NavigateBackDemo()[pri:6, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:15 IST" name="NavigateBackDemo" finished-at="2026-08-12T10:38:18 IST" duration-ms="3279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateBackDemo -->
+        <test-method signature="RefreshDemo()[pri:7, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:18 IST" name="RefreshDemo" finished-at="2026-08-12T10:38:20 IST" duration-ms="1777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RefreshDemo -->
+        <test-method signature="NavigateForwardDemo()[pri:8, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:20 IST" name="NavigateForwardDemo" finished-at="2026-08-12T10:38:25 IST" duration-ms="4942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateForwardDemo -->
+        <test-method signature="BrowserTitle()[pri:9, instance:com.JenkinsCICD.DemoTest.JenkinsCICDTest@449a4f23]" started-at="2026-08-12T10:38:25 IST" name="BrowserTitle" finished-at="2026-08-12T10:38:29 IST" duration-ms="4099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTitle -->
+      </class> <!-- com.JenkinsCICD.DemoTest.JenkinsCICDTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
